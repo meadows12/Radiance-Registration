@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Radiance Registration</string>
+    <string-array name="payment">
+        <item>Cash</item>
+        <item>UPI</item>
+    </string-array>
+
+</resources>

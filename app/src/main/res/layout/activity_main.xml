@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@drawable/frontr"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <EditText
+                    android:id="@+id/Participant1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Participant1"
+                    android:inputType="text"
+              android:textColorHint="#FFFFFF"
+                    android:textColor="#FFFFFF"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/Participant2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Participant2"
+                    android:inputType="text"
+                    android:textColorHint="#FFFFFF"
+                    android:textColor="#FFFFFF"/>
+
+                <EditText
+                    android:id="@+id/Contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Contact number"
+                    android:inputType="number"
+                    android:textColorHint="#FFFFFF"
+                    android:textColor="#FFFFFF"/>
+                <EditText
+                    android:id="@+id/Email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email ID"
+                    android:inputType="textEmailAddress"
+                    android:textColorHint="#FFFFFF"
+                    android:textColor="#FFFFFF"/>
+                <EditText
+                    android:id="@+id/College"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="College name"
+                    android:inputType="text"
+                    android:textColorHint="#FFFFFF"
+                    android:textColor="#FFFFFF"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/Year"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Year:"
+                        android:textSize="20dp"
+                        android:textColor="#FFFFFF"/>
+
+                    <CheckBox
+                        android:id="@+id/FE"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="FE"
+                        android:textColorHint="#FFFFFF"
+                       />
+
+                    <CheckBox
+                        android:id="@+id/SE"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="SE"
+                        android:textColorHint="#FFFFFF"
+
+                   />
+
+                    <CheckBox
+                        android:id="@+id/TE"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="TE"
+                        android:textColorHint="#FFFFFF"
+                       />
+
+
+
+                    <CheckBox
+                        android:id="@+id/BE"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="BE"
+                        android:textColorHint="#FFFFFF"
+                    />
+                </LinearLayout>
+                <EditText
+                    android:id="@+id/Date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Date of Registration"
+                    android:inputType="text"
+                    android:textColorHint="#FFFFFF"
+                    android:textColor="#FFFFFF"
+                   />
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textSize="10dp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    />
+                <TextView
+                    android:id="@+id/Technical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Technical Events"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"/>
+
+                <TextView
+                    android:id="@+id/Codewars"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Code Wars:"
+                    android:textColorHint="#FFFFFF"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <CheckBox
+                        android:id="@+id/Ind"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Individual Rs.80"
+                        android:textColorHint="#FFFFFF"/>
+
+                    <CheckBox
+                        android:id="@+id/Team"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Team Rs.100"
+                        android:textColorHint="#FFFFFF"/>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/Justcoding"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Just Coding:"
+                    android:textColor="#FFFFFF"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <CheckBox
+                        android:id="@+id/Ind1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Individual Rs.80"
+                        android:textColorHint="#FFFFFF"/>
+
+                    <CheckBox
+                        android:id="@+id/Team1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Team Rs.100"
+                        android:textColorHint="#FFFFFF"/>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/Recodeit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Recode It:"
+                    android:textColor="#FFFFFF"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <CheckBox
+                        android:id="@+id/Ind2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Individual Rs.80"
+                        android:textColorHint="#FFFFFF"/>
+
+                    <CheckBox
+                        android:id="@+id/Team2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Team Rs.100"
+                        android:textColorHint="#FFFFFF"/>
+                </LinearLayout>
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textSize="10dp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                  />
+
+                <TextView
+                    android:id="@+id/Nontechnical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Non-Technical Events"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/Spillandquill"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Spill and Quill Rs.100"
+                    android:textColorHint="#FFFFFF" />
+
+                <CheckBox
+                    android:id="@+id/Quizmaster"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Quiz Master Rs.100"
+                    android:textColorHint="#FFFFFF"/>
+
+                <CheckBox
+                    android:id="@+id/Shutterup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Shutter Up Rs.100"
+                    android:textColorHint="#FFFFFF"/>
+
+                <CheckBox
+                    android:id="@+id/Decryptia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Decryptia Rs.100"
+                    android:textColorHint="#FFFFFF"/>
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Pay"
+                android:background="#125290"
+                android:id="@+id/pay"
+                />
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
