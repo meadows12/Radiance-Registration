@@ -3,6 +3,7 @@ package com.example.radianceregistration;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Rect;
 import android.os.Bundle;
 
 import com.gigamole.infinitecycleviewpager.HorizontalInfiniteCycleViewPager;
@@ -40,6 +41,8 @@ public class Boommain extends AppCompatActivity {
             switch (i) {
                 case 0:
                     builder.normalText("REGISTER")
+                            .normalImageRes(R.drawable.ic_edit)
+                            .imagePadding(new Rect(15,15,15,15))
                             .normalTextColor(R.color.black)
                             .normalColorRes(R.color.colorAccent)
                             .listener(new OnBMClickListener() {
@@ -51,6 +54,8 @@ public class Boommain extends AppCompatActivity {
                     break;
                 case 1:
                     builder.normalText("ABOUT US")
+                            .normalImageRes(R.drawable.ic_aboutus)
+                            .imagePadding(new Rect(15,15,15,15))
                             .normalColorRes(R.color.colorAccent)
                             .normalTextColor(R.color.black)
                             .listener(new OnBMClickListener() {
@@ -62,6 +67,8 @@ public class Boommain extends AppCompatActivity {
                     break;
                 case 2:
                     builder.normalText("CONTACT US")
+                            .normalImageRes(R.drawable.ic_contactus)
+                            .imagePadding(new Rect(15,15,15,15))
                             .normalTextColor(R.color.black)
                             .normalColorRes(R.color.colorAccent)
                             .listener(new OnBMClickListener() {

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
+    android:background="#000000"
     tools:context=".Boommain">
 
     <com.google.android.material.appbar.AppBarLayout
@@ -25,15 +25,17 @@
                 android:id="@+id/activity_landing"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/colorPrimary">
-
-
+                android:background="@color/colorPrimary"
+             >
                 <ImageView
                     android:id="@+id/img_background"
                     android:layout_width="match_parent"
-                    android:layout_height="400dp"
+                    android:layout_height="350dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/bg2"
                     android:background="@color/colorPrimary"
-                    android:src="@drawable/background_5" />
+                     />
 
                 <ImageView
                     android:layout_width="300dp"
@@ -49,7 +51,7 @@
                 android:id="@+id/toolbar1"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
-                android:background="@color/colorPrimary"
+                android:background="#000000"
                 app:layout_collapseMode="pin"
                 app:popupTheme="@style/Theme.AppCompat.Light">
 
