@@ -27,4 +27,7 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
     implementation 'com.shreyaspatil:EasyUpiPayment:2.0'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'com.nightonke:boommenu:2.1.1'
+    implementation 'com.github.devlight:infinitecycleviewpager:1.0.2'
 }

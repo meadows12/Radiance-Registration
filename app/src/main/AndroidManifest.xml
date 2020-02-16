@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".upi"></activity>
+        <activity android:name=".Boommain"></activity>
+        <activity android:name=".Registration" />
+        <activity android:name=".upi" />
         <activity android:name=".cash" />
         <activity android:name=".Payment" />
         <activity android:name=".MainActivity">
