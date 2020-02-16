@@ -4,11 +4,15 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class Payment extends AppCompatActivity {
+import com.r0adkll.slidr.Slidr;
+
+public class ThirdPage extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_payment);
+        setContentView(R.layout.activity_third_page);
+        overridePendingTransition(R.anim.push_up_in, R.anim.push_up_out);
+        Slidr.attach(this);
     }
 }

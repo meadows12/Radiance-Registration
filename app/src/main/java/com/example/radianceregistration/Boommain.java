@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.graphics.Rect;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
 
 import com.gigamole.infinitecycleviewpager.HorizontalInfiniteCycleViewPager;
 import com.nightonke.boommenu.Animation.BoomEnum;
@@ -19,12 +21,14 @@ import java.util.List;
 public class Boommain extends AppCompatActivity {
     List<String> stringlist = new ArrayList<>();
     BoomMenuButton bbb;
+    ImageView pascw;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_boommain);
         bbb = findViewById(R.id.bbb);
+        pascw=findViewById(R.id.pasc);
         bbb.setBoomEnum(BoomEnum.PARABOLA_2);
         bbb.setShowRotateEaseEnum(EaseEnum.EaseOutBack);
         bbb.setUse3DTransformAnimation(true);
@@ -84,7 +88,13 @@ public class Boommain extends AppCompatActivity {
 
 
         }
-
+pascw.setOnLongClickListener(new View.OnLongClickListener() {
+    @Override
+    public boolean onLongClick(View view) {
+        startActivity(new Intent(getApplicationContext(),Sign.class));
+        return false;
+    }
+});
     }
 
     private void HandleBoomMenuClick(int index) {

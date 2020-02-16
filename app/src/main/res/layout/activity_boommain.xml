@@ -38,6 +38,7 @@
                      />
 
                 <ImageView
+                    android:id="@+id/pasc"
                     android:layout_width="300dp"
                     android:layout_height="300dp"
                     android:layout_below="@+id/img_background"

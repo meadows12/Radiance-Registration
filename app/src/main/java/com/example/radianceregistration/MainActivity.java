@@ -33,6 +33,9 @@ public class MainActivity extends AppCompatActivity {
     {
         startActivity(new Intent(getApplicationContext(),Boommain.class));
     }
-
+    public void BoomcontentClicked(View view)
+    {
+        startActivity(new Intent(getApplicationContext(),Cardcontent.class));
+    }
 
 }
