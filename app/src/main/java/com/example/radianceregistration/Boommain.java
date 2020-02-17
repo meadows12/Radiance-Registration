@@ -19,7 +19,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Boommain extends AppCompatActivity {
-    List<String> stringlist = new ArrayList<>();
+    List<Event> eventList = new ArrayList<>();
     BoomMenuButton bbb;
     ImageView pascw;
 
@@ -36,7 +36,7 @@ public class Boommain extends AppCompatActivity {
         datado();
 
         HorizontalInfiniteCycleViewPager pager = (HorizontalInfiniteCycleViewPager)findViewById(R.id.horizontal_cycle);
-        CardAdapter cardAdapter =  new CardAdapter(stringlist,getBaseContext());
+        CardAdapter cardAdapter =  new CardAdapter(eventList,getBaseContext());
         pager.setAdapter(cardAdapter);
 
         for (int i = 0; i < bbb.getPiecePlaceEnum().pieceNumber(); i++) {
@@ -48,6 +48,7 @@ public class Boommain extends AppCompatActivity {
                             .normalImageRes(R.drawable.ic_edit)
                             .imagePadding(new Rect(15,15,15,15))
                             .normalTextColor(R.color.black)
+                            .highlightedTextColor(R.color.blue)
                             .normalColorRes(R.color.colorAccent)
                             .listener(new OnBMClickListener() {
                                 @Override
@@ -62,6 +63,7 @@ public class Boommain extends AppCompatActivity {
                             .imagePadding(new Rect(15,15,15,15))
                             .normalColorRes(R.color.colorAccent)
                             .normalTextColor(R.color.black)
+                            .highlightedTextColor(R.color.blue)
                             .listener(new OnBMClickListener() {
                                 @Override
                                 public void onBoomButtonClick(int index) {
@@ -75,6 +77,7 @@ public class Boommain extends AppCompatActivity {
                             .imagePadding(new Rect(15,15,15,15))
                             .normalTextColor(R.color.black)
                             .normalColorRes(R.color.colorAccent)
+                            .highlightedTextColor(R.color.blue)
                             .listener(new OnBMClickListener() {
                                 @Override
                                 public void onBoomButtonClick(int index) {
@@ -122,9 +125,9 @@ pascw.setOnLongClickListener(new View.OnLongClickListener() {
 
     private void datado() {
 
-        stringlist.add("arhbabrhdbsjkablkjewbqiluwbn cnx vnl ZLjehiqwulehuiebfjal");
-        stringlist.add("jrghareuygqtahyvhjad");
-        stringlist.add("uirhbvaehb nmbm,ae");
-        stringlist.add("awkbhjwabnvkyawgej,ea");
+        eventList.add(new Event("CODE WARS", R.drawable.codewar));
+        eventList.add(new Event("RECODE IT", R.drawable.recodeit));
+        eventList.add(new Event("QUIZ MASTER", R.drawable.pic3));
+        eventList.add(new Event("SHUTTER UP", R.drawable.up));
     }
 }

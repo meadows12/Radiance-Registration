@@ -11,7 +11,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:background="#000000"
+            android:background="@drawable/bg2"
             android:padding="10dp">
 
             <LinearLayout
@@ -24,7 +24,7 @@
                     android:layout_height="wrap_content"
                     android:text="SHUTTER UP"
                     android:textColor="#FFFFFF"
-                    android:textSize="24sp"
+                    android:textSize="30dp"
                     android:textStyle="bold" />
             </LinearLayout>
            <LinearLayout
@@ -37,6 +37,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Photography Contest..."
+                android:textStyle="bold"
                 android:textColor="#FFFFFF"
                 android:textSize="18sp" />
 

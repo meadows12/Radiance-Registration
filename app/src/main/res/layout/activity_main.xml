@@ -34,13 +34,7 @@
                     android:textColor="#FFFFFF"
                     android:onClick="BoomClicked"
                     />
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Clickboomcontent"
-                    android:textColor="#FFFFFF"
-                    android:onClick="BoomcontentClicked"
-                    />
+
 
             </LinearLayout>
         </ScrollView>

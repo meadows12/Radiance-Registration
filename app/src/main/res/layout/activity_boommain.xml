@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000000"
+    android:background="@drawable/bg2"
     tools:context=".Boommain">
 
     <com.google.android.material.appbar.AppBarLayout
@@ -33,7 +33,6 @@
                     android:layout_height="350dp"
                     android:adjustViewBounds="true"
                     android:scaleType="fitXY"
-                    android:src="@drawable/bg2"
                     android:background="@color/colorPrimary"
                      />
 
@@ -63,7 +62,7 @@
                     android:background="@color/colorPrimary"
                     app:bmb_buttonEnum="ham"
                     app:bmb_buttonPlaceEnum="buttonPlace_ham_3"
-                    app:bmb_highlightedColor="@color/bordertint"
+                    app:bmb_highlightedColor="@color/blue"
                     app:bmb_normalColor="@color/colorPrimary"
                     app:bmb_piecePlaceEnum="piecePlace_ham_3"
                     app:bmb_shadowColor="@color/colorAccent" />
