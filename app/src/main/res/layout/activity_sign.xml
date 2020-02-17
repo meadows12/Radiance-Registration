@@ -27,11 +27,14 @@
         android:textColorHint="#FFFFFF"
         />
     <Button
-        android:id="@+id/sign"
+        android:id="@+id/signin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Sign in"
-        android:onClick="Signclicked"
 />
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"/>
 
 </androidx.appcompat.widget.LinearLayoutCompat>
