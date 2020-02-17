@@ -163,7 +163,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="80dp"
                     android:orientation="horizontal"
-                    android:visibility="invisible">
+                    android:visibility="gone">
                     <RadioButton
                         android:id="@+id/ind1"
                         android:layout_width="wrap_content"
@@ -205,7 +205,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="80dp"
                     android:orientation="horizontal"
-                    android:visibility="invisible">
+                    android:visibility="gone">
                     <RadioButton
                         android:id="@+id/ind2"
                         android:layout_width="wrap_content"
@@ -260,7 +260,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="80dp"
                     android:orientation="vertical"
-                    android:visibility="invisible">
+                    android:visibility="gone">
                     <RadioButton
                         android:id="@+id/one"
                         android:layout_width="wrap_content"
