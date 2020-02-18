@@ -1,15 +1,16 @@
 package com.example.radianceregistration;
 
+import java.io.Serializable;
 import java.util.Map;
 
-public class ParticipantInfo {
+public class ParticipantInfo implements Serializable {
     private String Participant1,Email,Collegename,Year;
-    private int contactno;                  //originally int so convert it into string
+    private String contactno;                  //originally int so convert it into string
     private Map<String,String> mapi;      //event name and his partner
     private int Amount;
 
-    public ParticipantInfo(String participant1) {
-        Participant1 = participant1;
+    public ParticipantInfo() {
+
     }
 
     public String getParticipant1() {
@@ -44,11 +45,11 @@ public class ParticipantInfo {
         Year = year;
     }
 
-    public int getContactno() {
+    public String getContactno() {
         return contactno;
     }
 
-    public void setContactno(int contactno) {
+    public void setContactno(String contactno) {
         this.contactno = contactno;
     }
 

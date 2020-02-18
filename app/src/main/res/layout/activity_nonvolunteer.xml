@@ -5,15 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Registration"
-    android:background="#383636">
-<Toolbar
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:title="REGISTRATION"
-    android:titleTextColor="#FFFFFF"
-    android:background="#1f6dfe"
-    />
+    tools:context=".nonvolunteer"
+    android:background="@drawable/bg2">
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:title="REGISTRATION"
+        android:titleTextColor="#FFFFFF"
+        android:background="#110F0F"
+        />
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -51,19 +51,19 @@
                         android:inputType="textPersonName"
                         android:textColor="#ffffff" />
                 </com.google.android.material.textfield.TextInputLayout>
-<!--                <EditText-->
-<!--                    android:id="@+id/Participant1"-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:hint="Participant1"-->
-<!--                    android:inputType="textPersonName"-->
-<!--                    android:textColorHint="#FFFFFF"-->
-<!--                    android:textColor="#FFFFFF"-->
-<!--                    app:layout_constraintBottom_toBottomOf="parent"-->
-<!--                    app:layout_constraintLeft_toLeftOf="parent"-->
-<!--                    app:layout_constraintRight_toRightOf="parent"-->
-<!--                    app:layout_constraintTop_toTopOf="parent"-->
-<!--                    android:paddingTop="30dp"/>-->
+                <!--                <EditText-->
+                <!--                    android:id="@+id/Participant1"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:hint="Participant1"-->
+                <!--                    android:inputType="textPersonName"-->
+                <!--                    android:textColorHint="#FFFFFF"-->
+                <!--                    android:textColor="#FFFFFF"-->
+                <!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+                <!--                    app:layout_constraintLeft_toLeftOf="parent"-->
+                <!--                    app:layout_constraintRight_toRightOf="parent"-->
+                <!--                    app:layout_constraintTop_toTopOf="parent"-->
+                <!--                    android:paddingTop="30dp"/>-->
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/layout_contact"
@@ -87,15 +87,15 @@
                         android:inputType="number"
                         android:textColor="#ffffff" />
                 </com.google.android.material.textfield.TextInputLayout>
-<!--                <EditText-->
-<!--                    android:id="@+id/Contact"-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:hint="Contact number"-->
-<!--                    android:inputType="number"-->
-<!--                    android:textColorHint="#FFFFFF"-->
-<!--                    android:textColor="#FFFFFF"-->
-<!--                    android:paddingTop="30dp"/>-->
+                <!--                <EditText-->
+                <!--                    android:id="@+id/Contact"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:hint="Contact number"-->
+                <!--                    android:inputType="number"-->
+                <!--                    android:textColorHint="#FFFFFF"-->
+                <!--                    android:textColor="#FFFFFF"-->
+                <!--                    android:paddingTop="30dp"/>-->
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/layout_email"
                     android:layout_width="match_parent"
@@ -118,16 +118,16 @@
                         android:inputType="textEmailAddress"
                         android:textColor="#ffffff" />
                 </com.google.android.material.textfield.TextInputLayout>
-<!--                <EditText-->
-<!--                    android:id="@+id/Email"-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:hint="Email ID"-->
-<!--                    android:inputType="textEmailAddress"-->
-<!--                    android:textColorHint="#FFFFFF"-->
-<!--                    android:textColor="#FFFFFF"-->
-<!--                    android:paddingTop="30dp"-->
-<!--                    />-->
+                <!--                <EditText-->
+                <!--                    android:id="@+id/Email"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:hint="Email ID"-->
+                <!--                    android:inputType="textEmailAddress"-->
+                <!--                    android:textColorHint="#FFFFFF"-->
+                <!--                    android:textColor="#FFFFFF"-->
+                <!--                    android:paddingTop="30dp"-->
+                <!--                    />-->
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/layout_college"
                     android:layout_width="match_parent"
@@ -150,15 +150,15 @@
                         android:inputType="text"
                         android:textColor="#ffffff" />
                 </com.google.android.material.textfield.TextInputLayout>
-<!--                <EditText-->
-<!--                    android:id="@+id/College"-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:hint="College name"-->
-<!--                    android:inputType="text"-->
-<!--                    android:textColorHint="#FFFFFF"-->
-<!--                    android:textColor="#FFFFFF"-->
-<!--                    android:paddingTop="30dp"/>-->
+                <!--                <EditText-->
+                <!--                    android:id="@+id/College"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:hint="College name"-->
+                <!--                    android:inputType="text"-->
+                <!--                    android:textColorHint="#FFFFFF"-->
+                <!--                    android:textColor="#FFFFFF"-->
+                <!--                    android:paddingTop="30dp"/>-->
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -259,30 +259,30 @@
                         android:buttonTint="#FFFFFF"/>
 
                 </RadioGroup>
-<!--                <com.google.android.material.textfield.TextInputLayout-->
-<!--                    android:id="@+id/layout_name3"-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_marginStart="8dp"-->
-<!--                    android:layout_marginTop="0dp"-->
-<!--                    android:textColorHint="#ffffff"-->
-<!--                    android:visibility="invisible"-->
-<!--                    app:errorEnabled="true">-->
-<!--                    <com.google.android.material.textfield.TextInputEditText-->
-<!--                        android:id="@+id/name3"-->
-<!--                        android:layout_width="match_parent"-->
-<!--                        android:layout_height="50dp"-->
-<!--                        android:layout_marginStart="0dp"-->
-<!--                        android:layout_marginTop="120dp"-->
-<!--                        android:layout_marginEnd="8dp"-->
-<!--                        android:layout_marginBottom="8dp"-->
-<!--                        android:backgroundTint="#ffffff"-->
-<!--                        android:ems="10"-->
-<!--                        android:hint="Participant 2"-->
-<!--                        android:inputType="textPersonName"-->
-<!--                        android:visibility="invisible"-->
-<!--                        android:textColor="#ffffff" />-->
-<!--                </com.google.android.material.textfield.TextInputLayout>-->
+                <!--                <com.google.android.material.textfield.TextInputLayout-->
+                <!--                    android:id="@+id/layout_name3"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_marginStart="8dp"-->
+                <!--                    android:layout_marginTop="0dp"-->
+                <!--                    android:textColorHint="#ffffff"-->
+                <!--                    android:visibility="invisible"-->
+                <!--                    app:errorEnabled="true">-->
+                <!--                    <com.google.android.material.textfield.TextInputEditText-->
+                <!--                        android:id="@+id/name3"-->
+                <!--                        android:layout_width="match_parent"-->
+                <!--                        android:layout_height="50dp"-->
+                <!--                        android:layout_marginStart="0dp"-->
+                <!--                        android:layout_marginTop="120dp"-->
+                <!--                        android:layout_marginEnd="8dp"-->
+                <!--                        android:layout_marginBottom="8dp"-->
+                <!--                        android:backgroundTint="#ffffff"-->
+                <!--                        android:ems="10"-->
+                <!--                        android:hint="Participant 2"-->
+                <!--                        android:inputType="textPersonName"-->
+                <!--                        android:visibility="invisible"-->
+                <!--                        android:textColor="#ffffff" />-->
+                <!--                </com.google.android.material.textfield.TextInputLayout>-->
                 <EditText
                     android:id="@+id/name3"
                     android:layout_gravity="center"
@@ -323,30 +323,30 @@
                         android:buttonTint="#FFFFFF"
                         android:text="Team Rs.100"/>
                 </RadioGroup>
-<!--                <com.google.android.material.textfield.TextInputLayout-->
-<!--                    android:id="@+id/layout_name4"-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_marginStart="8dp"-->
-<!--                    android:visibility="gone"-->
-<!--                    android:layout_marginTop="0dp"-->
-<!--                    android:textColorHint="#ffffff"-->
-<!--                    app:errorEnabled="true">-->
-<!--                    <com.google.android.material.textfield.TextInputEditText-->
-<!--                        android:id="@+id/name4"-->
-<!--                        android:layout_width="match_parent"-->
-<!--                        android:layout_height="50dp"-->
-<!--                        android:layout_marginStart="0dp"-->
-<!--                        android:layout_marginTop="120dp"-->
-<!--                        android:layout_marginEnd="8dp"-->
-<!--                        android:layout_marginBottom="8dp"-->
-<!--                        android:backgroundTint="#ffffff"-->
-<!--                        android:ems="10"-->
-<!--                        android:hint="Participant 2"-->
-<!--                        android:inputType="textPersonName"-->
-<!--                        android:visibility="invisible"-->
-<!--                        android:textColor="#ffffff" />-->
-<!--                </com.google.android.material.textfield.TextInputLayout>-->
+                <!--                <com.google.android.material.textfield.TextInputLayout-->
+                <!--                    android:id="@+id/layout_name4"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_marginStart="8dp"-->
+                <!--                    android:visibility="gone"-->
+                <!--                    android:layout_marginTop="0dp"-->
+                <!--                    android:textColorHint="#ffffff"-->
+                <!--                    app:errorEnabled="true">-->
+                <!--                    <com.google.android.material.textfield.TextInputEditText-->
+                <!--                        android:id="@+id/name4"-->
+                <!--                        android:layout_width="match_parent"-->
+                <!--                        android:layout_height="50dp"-->
+                <!--                        android:layout_marginStart="0dp"-->
+                <!--                        android:layout_marginTop="120dp"-->
+                <!--                        android:layout_marginEnd="8dp"-->
+                <!--                        android:layout_marginBottom="8dp"-->
+                <!--                        android:backgroundTint="#ffffff"-->
+                <!--                        android:ems="10"-->
+                <!--                        android:hint="Participant 2"-->
+                <!--                        android:inputType="textPersonName"-->
+                <!--                        android:visibility="invisible"-->
+                <!--                        android:textColor="#ffffff" />-->
+                <!--                </com.google.android.material.textfield.TextInputLayout>-->
                 <EditText
                     android:id="@+id/name4"
                     android:layout_gravity="center"
@@ -433,66 +433,44 @@
                     android:layout_height="wrap_content"
                     android:text=""
                     />
-<!--                <Button-->
-<!--                    android:id="@+id/lpay"-->
-<!--                    android:layout_width= "275dp"-->
-<!--                    android:layout_height="60dp"-->
-<!--                    android:layout_marginStart="8dp"-->
-<!--                    android:layout_marginTop="30dp"-->
-<!--                    android:layout_marginEnd="8dp"-->
-<!--                    android:layout_marginBottom="16dp"-->
-<!--                    android:background="#FFFFFF"-->
-<!--                    android:backgroundTint="@color/white"-->
-<!--                    android:text="   PAY   "-->
-<!--                    android:textStyle="bold"-->
-<!--                    android:textColor="@color/black"-->
-<!--                    android:textSize="14sp"-->
-<!--                    android:layout_gravity="center_horizontal"/>-->
-<!--                <com.spark.submitbutton.SubmitButton-->
-<!--                    android:id="@+id/pay"-->
-<!--                    android:layout_width="50dp"-->
-<!--                    android:layout_height="550dp"-->
-<!--                    android:text="   PAY   "-->
-<!--                    android:textSize="15sp"-->
-<!--                    android:textColor="@color/black"-->
-<!--                    app:sub_btn_background="@color/white"-->
-<!--                    app:sub_btn_duration="3000"-->
-<!--                    android:textStyle="bold"-->
-<!--                    app:sub_btn_line_color="#8BC34A"-->
-<!--                    app:sub_btn_ripple_color="#03A9F4"-->
-<!--                    app:sub_btn_tick_color="@color/white"-->
-<!--                    android:layout_gravity="center_horizontal"-->
-<!--                    android:visibility="invisible" />-->
-                <RadioGroup
-                    android:id="@+id/rg4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_gravity="center"
-                   >
-                    <RadioButton
-                        android:id="@+id/cashnew"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Cash "
-                        android:textColor="#FFFFFF"
-                        android:buttonTint="#FFFFFF"/>
-                    <RadioButton
-                        android:id="@+id/upinew"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="#FFFFFF"
-                        android:buttonTint="#FFFFFF"
-                        android:text="UPI"/>
-                </RadioGroup>
+                <!--                <Button-->
+                <!--                    android:id="@+id/lpay"-->
+                <!--                    android:layout_width= "275dp"-->
+                <!--                    android:layout_height="60dp"-->
+                <!--                    android:layout_marginStart="8dp"-->
+                <!--                    android:layout_marginTop="30dp"-->
+                <!--                    android:layout_marginEnd="8dp"-->
+                <!--                    android:layout_marginBottom="16dp"-->
+                <!--                    android:background="#FFFFFF"-->
+                <!--                    android:backgroundTint="@color/white"-->
+                <!--                    android:text="   PAY   "-->
+                <!--                    android:textStyle="bold"-->
+                <!--                    android:textColor="@color/black"-->
+                <!--                    android:textSize="14sp"-->
+                <!--                    android:layout_gravity="center_horizontal"/>-->
+                <!--                <com.spark.submitbutton.SubmitButton-->
+                <!--                    android:id="@+id/pay"-->
+                <!--                    android:layout_width="50dp"-->
+                <!--                    android:layout_height="550dp"-->
+                <!--                    android:text="   PAY   "-->
+                <!--                    android:textSize="15sp"-->
+                <!--                    android:textColor="@color/black"-->
+                <!--                    app:sub_btn_background="@color/white"-->
+                <!--                    app:sub_btn_duration="3000"-->
+                <!--                    android:textStyle="bold"-->
+                <!--                    app:sub_btn_line_color="#8BC34A"-->
+                <!--                    app:sub_btn_ripple_color="#03A9F4"-->
+                <!--                    app:sub_btn_tick_color="@color/white"-->
+                <!--                    android:layout_gravity="center_horizontal"-->
+                <!--                    android:visibility="invisible" />-->
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:text="Pay"
-                    android:background="@color/colorAccent"
+                    android:background="#F7F9FA"
                     android:id="@+id/pay"
-                    android:textColor="#FFFFFF"
+                    android:textColor="#000000"
                     />
                 <ProgressBar
                     android:layout_gravity="center"

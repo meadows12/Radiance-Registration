@@ -2,6 +2,11 @@ package com.example.radianceregistration;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.os.Bundle;
+
+
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -18,28 +23,26 @@ import java.util.Map;
 
 import static android.text.TextUtils.isEmpty;
 
-public class Registration extends AppCompatActivity {
+public class nonvolunteer extends AppCompatActivity {
     private Button pay;
     private CheckBox FE,SE,TE,BE,Codewars,Recodeit,Shutterup,Quizmaster;
     private EditText Participant1,Participant2,Contact,Email,College,Date;
     private String name1,name2,contact1,mail1,college1,team1,team2;
     private String year,eventcodewars,eventrecodeit,eventshutterup,eventquizmaster;
     private RadioGroup radioGroup1,radioGroup2,radioGroup3;
-    private RadioButton radio1,radio2,radio3,radio4,one,two,three,upinew,cashnew;
+    private RadioButton radio1,radio2,radio3,radio4,one,two,three;
     private   EditText editText2,editText3;
     private TextView result;
-    int sum=0;
+    int sum;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_registration);
+        setContentView(R.layout.activity_nonvolunteer);
         FE=(CheckBox)findViewById(R.id.FE);
         SE=(CheckBox)findViewById(R.id.SE);
         TE=(CheckBox)findViewById(R.id.TE);
         BE=(CheckBox)findViewById(R.id.BE);
         pay=(Button)findViewById(R.id.pay);
-        upinew =  findViewById(R.id.upinew);
-        cashnew = findViewById(R.id.cashnew);
         Participant1=(EditText)findViewById(R.id.Participant1);
 //        Participant2=(EditText)findViewById(R.id.Participant2);
         Contact=(EditText)findViewById(R.id.Contact);
@@ -86,17 +89,8 @@ public class Registration extends AppCompatActivity {
                 }
                 else
                 {
-                    if(radio1.isChecked())
-                    {
-                        radio1.setChecked(false);
-                    }
-                    else
-                        radio2.setChecked(false);
-                    editText2.setText(" ");
                     radioGroup1.setVisibility(View.INVISIBLE);
                     editText2.setVisibility(View.INVISIBLE);
-                    radioGroup1.setVisibility(View.GONE);
-                    editText2.setVisibility(View.GONE);
                 }
             }
         });
@@ -123,19 +117,8 @@ public class Registration extends AppCompatActivity {
                 }
                 else
                 {
-                   if(radio3.isChecked())
-                    {
-                        radio3.setChecked(false);
-                    }
-                   else
-                   {
-                       radio4.setChecked(false);
-                   }
-                   editText3.setText(" ");
                     radioGroup2.setVisibility(View.INVISIBLE);
                     editText3.setVisibility(View.INVISIBLE);
-                    radioGroup2.setVisibility(View.GONE);
-                    editText3.setVisibility(View.GONE);
                 }
             }
         });
@@ -148,14 +131,7 @@ public class Registration extends AppCompatActivity {
                 }
                 else
                 {
-                     if(one.isChecked()) {one.setChecked(false);}
-                     else if(two.isChecked()){
-                         two.setChecked(false);
-                     }
-                     else
-                         three.setChecked(false);
                     radioGroup3.setVisibility(View.INVISIBLE);
-                    radioGroup3.setVisibility(View.GONE);
                 }
             }
         });
@@ -203,59 +179,66 @@ public class Registration extends AppCompatActivity {
                         }
                     }
                 }
-                amo();
-                if(!isEmpty(name1)&&!isEmpty(contact1)&&!isEmpty(mail1)&&!isEmpty(college1)&&isContactValid(contact1)&&isEmailValid(mail1)) {
-                    ParticipantInfo info = new ParticipantInfo();
+                amount();
+                if(!isEmpty(name1)&&!isEmpty(contact1)&&!isEmpty(mail1)&&!isEmpty(college1)&&isContactValid(contact1)&&isEmailValid(mail1)){
+                    ParticipantInfo info=new ParticipantInfo();
                     info.setParticipant1(name1);
                     info.setCollegename(college1);
                     info.setContactno(contact1);
                     info.setEmail(mail1);
                     info.setYear(year);
                     info.setAmount(sum);
-                    Map<String,String> ev = new HashMap<String,String>();
-                    if (Codewars.isChecked()) {
-                        if (team1 != null) {
-                            ev.put("Code Wars", team1);
-                        } else
+                    Map<String,String>ev=new HashMap<String, String>();
+                    if(Codewars.isChecked())
+                    {
+                        if(team1!=null)
+                        {
+                            ev.put("Code Wars",team1);
+                        }
+                        else
                             ev.put("Code Wars", " ");
                     }
-                    if (Recodeit.isChecked()) {
-                        if (team2 != null) {
-                            ev.put("Recode It", team2);
-                        } else
+                    if(Recodeit.isChecked())
+                    {
+                        if(team2!=null)
+                        {
+                            ev.put("Recode It",team2);
+                        }
+                        else
                             ev.put("Recode It", " ");
                     }
-                    if (Shutterup.isChecked()) {
-                        if (one.isChecked()) {
-                            ev.put("Shutter UP", "one");
-                        } else if (two.isChecked()) {
-                            ev.put("Shutter Up", "two");
-                        } else {
-                            ev.put("Shutter Up", "three");
+                    if(Shutterup.isChecked())
+                    {
+                        if(one.isChecked())
+                        {
+                            ev.put("Shutter UP","one");
+                        }
+                        else if(two.isChecked())
+                        {
+                            ev.put("Shutter Up","two");
+                        }
+                        else
+                        {
+                            ev.put("Shutter Up","three");
                         }
                     }
-                    if (Quizmaster.isChecked()) {
-                        ev.put("QuizMaster", " ");
+                    if(Quizmaster.isChecked())
+                    {
+                        ev.put("QuizMaster"," ");
                     }
                     info.setMapi(ev);
-                    if (cashnew.isChecked()) {
-                        /* startActivity(new Intent(getApplicationContext(),cash.class));*/
-                        Intent intent = new Intent(getApplicationContext(), cash.class);
-                        intent.putExtra("Object", info);
-                        startActivity(intent);
-                    } else if (upinew.isChecked()) {
-                        Intent intent =  new Intent(getApplicationContext(),upi.class);
-                        intent.putExtra("Object",info);
-                        intent.putExtra("FLAG",0);
-                        startActivity(intent);
-                    }
+                    Intent intent = new Intent(getApplicationContext(),upi.class);
+                    intent.putExtra("Object",info);
+                    intent.putExtra("FLAG",1);
+                    startActivity(intent);
                 }
             }
         });
 
     }
-    public void amo()
+    public void amount()
     {
+        int sum=0;
         int sum1=0;
         int sum2=0;
         int sum3=0;
@@ -316,7 +299,6 @@ public class Registration extends AppCompatActivity {
 
             case R.id.FE:
 
-
                 SE.setChecked(false);
                 TE.setChecked(false);
                 BE.setChecked(false);
@@ -328,7 +310,7 @@ public class Registration extends AppCompatActivity {
                 SE.setChecked(false);
                 TE.setChecked(false);
                 FE.setChecked(false);
-                year = "BE";
+                year = "SE";
 
                 break;
             case R.id.SE:
@@ -336,7 +318,7 @@ public class Registration extends AppCompatActivity {
                 FE.setChecked(false);
                 TE.setChecked(false);
                 BE.setChecked(false);
-                year = "SE";
+                year = "TE";
 
                 break;
             case R.id.TE:
@@ -344,7 +326,7 @@ public class Registration extends AppCompatActivity {
                 SE.setChecked(false);
                 FE.setChecked(false);
                 BE.setChecked(false);
-                year = "TE";
+                year = "BE";
 
                 break;
 
@@ -372,3 +354,4 @@ public class Registration extends AppCompatActivity {
     }*/
 
 }
+

@@ -1,9 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg2"
     tools:context=".Main4Activity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:text="ABOUT US"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:padding="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="#FFFFFF"
+        android:text="PASC is the most active ACM Chapter in
+INDIA. PICT is one of the best colleges in
+Maharashtra for Computer Science, PASC is
+highly prestigious chapter.\n\n
+At PASC, we all work together as a team.
+We take the utmost effort for the success
+of each and every member of PASC. We
+help them to achieve not only technical
+superiority but also bring the best out of
+them in the non-technical field as well so
+that they become the pioneers of today's
+world. Since we at PASC bring our motto
+into reality this year we received the 'BEST
+ACM STUDENT CHAPTER AWARD 2018, 2019'."
+        android:textSize="20dp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

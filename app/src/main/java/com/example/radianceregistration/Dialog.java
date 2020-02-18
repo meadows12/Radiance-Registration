@@ -24,6 +24,7 @@ selection=payment[which];
 
             }
         });
+/*
         builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int which) {
@@ -31,6 +32,7 @@ selection=payment[which];
 
             }
         });
+*/
         builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int which) {

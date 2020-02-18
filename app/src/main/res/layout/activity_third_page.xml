@@ -11,7 +11,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:background="#000000"
+            android:background="@drawable/bg2"
             android:padding="10dp">
 
             <LinearLayout
@@ -24,8 +24,9 @@
                     android:layout_height="wrap_content"
                     android:text="RECODE IT"
                     android:textColor="#FFFFFF"
-                    android:textSize="24sp"
-                    android:textStyle="bold" />
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    android:padding="20dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -36,10 +37,11 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Rules and Regulations"
+                    android:text="Rules and Regulations:"
                     android:textColor="#FFFFFF"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:padding="20dp"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -49,16 +51,18 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Round 1. This is MCQ round which will be conducted on paper. The participants will be allowed to use computer to code the solution if required or they can solve it on paper."
+                    android:text="Round 1: This is MCQ round which will be conducted on paper. The participants will be allowed to use computer to code the solution if required or they can solve it on paper."
                     android:textColor="#FFFFFF"
-                    android:textSize="18sp" />
+                    android:textSize="18sp"
+                    android:padding="20dp"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Round 2.  Second round is a set of executable files will be given. The paticipants can run the executable files and give custom input to see the respective output. The participants can run the files any number of times they want. From the given cutom inputs by the participants they need to figure out the logic of the code of the executable file and code it. Use of internet is strictly prohibited and will result in disqualification."
+                    android:text="Round 2: In second round a set of executable files will be given. The paticipants can run the executable files and give custom input to see the respective output. The participants can run the files any number of times they want. From the given cutom inputs by the participants they need to figure out the logic of the code of the executable file and code it. Use of internet is strictly prohibited and will result in disqualification."
                     android:textColor="#FFFFFF"
-                    android:textSize="18sp" />
+                    android:textSize="18sp"
+                    android:padding="20dp"/>
 
 
             </LinearLayout>
@@ -71,10 +75,11 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Team Distribution"
+                    android:text="Team Distribution:"
                     android:textColor="#FFFFFF"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:padding="20dp"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -109,10 +114,11 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Fees"
+                    android:text="Fees:"
                     android:textStyle="bold"
                     android:textColor="#FFFFFF"
-                    android:textSize="18sp" />
+                    android:textSize="20dp"
+                    android:padding="20dp"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

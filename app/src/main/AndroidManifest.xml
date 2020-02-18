@@ -9,18 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Sign"></activity>
+        <activity android:name=".nonvolunteer"></activity>
+        <activity android:name=".Sign" />
         <activity android:name=".Boommain" />
         <activity android:name=".Registration" />
         <activity android:name=".upi" />
         <activity android:name=".cash" />
-        <activity android:name=".ThirdPage"/>
-        <activity android:name=".SecondPage"/>
-        <activity android:name=".ForthPage"/>
-        <activity android:name=".FifthPage"/>
-        <activity android:name=".Main2Activity"/>
-        <activity android:name=".Main4Activity"/>
-        <activity android:name=".Main5Activity"/>
+        <activity android:name=".ThirdPage" />
+        <activity android:name=".SecondPage" />
+        <activity android:name=".ForthPage" />
+        <activity android:name=".FifthPage" />
+        <activity android:name=".Main4Activity" />
+        <activity android:name=".Main5Activity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

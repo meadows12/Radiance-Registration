@@ -25,10 +25,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-    public void RegClicked(View view)
-    {
-        startActivity(new Intent(getApplicationContext(),Registration.class));
-    }
     public void BoomClicked(View view)
     {
         startActivity(new Intent(getApplicationContext(),Boommain.class));

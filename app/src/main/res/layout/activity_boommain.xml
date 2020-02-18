@@ -62,7 +62,7 @@
                     android:background="@color/colorPrimary"
                     app:bmb_buttonEnum="ham"
                     app:bmb_buttonPlaceEnum="buttonPlace_ham_3"
-                    app:bmb_highlightedColor="@color/blue"
+                    app:bmb_highlightedColor="#110F0F"
                     app:bmb_normalColor="@color/colorPrimary"
                     app:bmb_piecePlaceEnum="piecePlace_ham_3"
                     app:bmb_shadowColor="@color/colorAccent" />

@@ -106,7 +106,7 @@ pascw.setOnLongClickListener(new View.OnLongClickListener() {
 
             switch (index) {
                 case 0:
-                    intent = new Intent(this, Registration.class);
+                    intent = new Intent(this, nonvolunteer.class);
                     startActivity(intent);
                     break;
                 case 1:

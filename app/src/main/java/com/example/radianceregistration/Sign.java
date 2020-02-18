@@ -37,7 +37,8 @@ EditText smail,password;
         mProgressBar=findViewById(R.id.progressBar);
         mProgressBar.setVisibility(View.GONE);
 
-        signin.setOnClickListener(new View.OnClickListener() {
+        signin.setOnClickListener(
+                new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String email = smail.getText().toString().trim();
