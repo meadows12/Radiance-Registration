@@ -85,19 +85,26 @@ public class Boommain extends AppCompatActivity {
                                 }
                             });
                     break;
+                case 3:
+                    builder.normalText("VOLUNTEER SIGN IN")
+                            .normalImageRes(R.drawable.ic_contactus)
+                            .imagePadding(new Rect(15,15,15,15))
+                            .normalTextColor(R.color.black)
+                            .normalColorRes(R.color.colorAccent)
+                            .highlightedTextColor(R.color.blue)
+                            .listener(new OnBMClickListener() {
+                                @Override
+                                public void onBoomButtonClick(int index) {
+                                    HandleBoomMenuClick(index);
+                                }
+                            });
+
                 default:
             }
             bbb.addBuilder(builder);
 
 
         }
-pascw.setOnLongClickListener(new View.OnLongClickListener() {
-    @Override
-    public boolean onLongClick(View view) {
-        startActivity(new Intent(getApplicationContext(),Sign.class));
-        return false;
-    }
-});
     }
 
     private void HandleBoomMenuClick(int index) {
@@ -116,7 +123,9 @@ pascw.setOnLongClickListener(new View.OnLongClickListener() {
                 case 2:
                     intent = new Intent(this, Main5Activity.class);
                     startActivity(intent);
-
+                case 3:
+                    intent = new Intent(this,Sign.class);
+                    startActivity(intent);
                     break;
                 default:
             }

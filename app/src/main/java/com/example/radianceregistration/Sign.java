@@ -30,10 +30,14 @@ EditText smail,password;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign);
-          signin=findViewById(R.id.signin);
-          smail=findViewById(R.id.Emailsign);
-          password=findViewById(R.id.Pwdsign);
         mAuth = FirebaseAuth.getInstance();
+        if(mAuth.getCurrentUser()!=null){
+            Intent intent1=new Intent(Sign.this,Registration.class);
+            startActivity(intent1);
+        }
+        signin=findViewById(R.id.signin);
+        smail=findViewById(R.id.Emailsign);
+        password=findViewById(R.id.Pwdsign);
         mProgressBar=findViewById(R.id.progressBar);
         mProgressBar.setVisibility(View.GONE);
 

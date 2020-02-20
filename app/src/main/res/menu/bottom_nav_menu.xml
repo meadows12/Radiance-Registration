@@ -3,8 +3,14 @@
         xmlns:app="http://schemas.android.com/apk/res-auto">
         <item
             android:id="@+id/action_recents"
-            android:enabled="true"
-            android:title="Pay"
+            android:title="re"
+            android:icon="@drawable/ic_person"
             app:showAsAction="ifRoom"
             />
+        <item
+            android:id="@+id/hs"
+            android:title="register"
+            app:showAsAction="never"></item>
+
+
     </menu>

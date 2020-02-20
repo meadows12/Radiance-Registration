@@ -1,9 +1,13 @@
 package com.example.radianceregistration;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -12,6 +16,9 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.google.firebase.auth.FirebaseAuth;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -28,12 +35,16 @@ public class Registration extends AppCompatActivity {
     private RadioButton radio1,radio2,radio3,radio4,one,two,three,upinew,cashnew;
     private   EditText editText2,editText3;
     private TextView result;
+    private FirebaseAuth mAuth;
     int sum=0;
+    private Toolbar stool;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registration);
         FE=(CheckBox)findViewById(R.id.FE);
+        stool =  findViewById(R.id.stool);
+        mAuth = FirebaseAuth.getInstance();
         SE=(CheckBox)findViewById(R.id.SE);
         TE=(CheckBox)findViewById(R.id.TE);
         BE=(CheckBox)findViewById(R.id.BE);
@@ -62,6 +73,7 @@ public class Registration extends AppCompatActivity {
         two=findViewById(R.id.two);
         three=findViewById(R.id.three);
         result=findViewById(R.id.result);
+      setSupportActionBar(stool);
         Codewars.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
@@ -171,19 +183,25 @@ public class Registration extends AppCompatActivity {
 
                 if (isEmpty(name1)) {
                     Participant1.setError("This field cannot be empty.");
+                    Participant1.requestFocus();
                 }
                 if (isEmpty(contact1)) {
                     Contact.setError("This field cannot be empty.");
+                    Contact.requestFocus();
                 } else if (!isContactValid(contact1)) {
                     Contact.setError("Mobile no. is incorrect.");
+                    Contact.requestFocus();
                 }
                 if (isEmpty(mail1)) {
                     Email.setError("This field cannot be empty.");
+                    Email.requestFocus();
                 } else if (!isEmailValid(mail1)) {
                     Email.setError("Email is incorrect.");
+                    Email.requestFocus();
                 }
                 if (isEmpty(college1)) {
                     College.setError("This field cannot be empty.");
+                    College.requestFocus();
                 }
                 if(Codewars.isChecked())
                 {
@@ -191,6 +209,7 @@ public class Registration extends AppCompatActivity {
                     {
                         if (isEmpty(team1)) {
                             editText2.setError("This field cannot be empty.");
+                            editText2.requestFocus();
                         }
                     }
                 }
@@ -200,6 +219,7 @@ public class Registration extends AppCompatActivity {
                     {
                         if (isEmpty(team2)) {
                             editText3.setError("This field cannot be empty.");
+                            editText3.requestFocus();
                         }
                     }
                 }
@@ -362,7 +382,12 @@ public class Registration extends AppCompatActivity {
         else
             return false;
     }
-   /* public void openDialog()
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+    }
+    /* public void openDialog()
     {
 
         Dialog d = new Dialog();
@@ -371,4 +396,26 @@ public class Registration extends AppCompatActivity {
 
     }*/
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.bottom_nav_menu,menu);
+        return true;
+    }
+
+    /*public void Signout(View view)
+    {
+        mAuth.signOut();
+        Toast.makeText(this, "u  have signed out", Toast.LENGTH_SHORT).show();
+    }
+*/
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        /*switch ((item.getItemId())){
+            case  R.id.action_recents:
+                mAuth.signOut();
+
+        }*/
+        Toast.makeText(this, "u  have signed out", Toast.LENGTH_SHORT).show();
+        return super.onOptionsItemSelected(item);
+    }
 }
