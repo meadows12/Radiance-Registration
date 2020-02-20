@@ -9,7 +9,10 @@
     android:background="@drawable/frontr"
 
     >
-
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="abc"/>
 
                 <Button
                     android:layout_width="wrap_content"
