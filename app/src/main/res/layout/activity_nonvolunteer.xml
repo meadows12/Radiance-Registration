@@ -6,13 +6,13 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".nonvolunteer"
-    android:background="@drawable/bg2">
+    android:background="#000000">
     <Toolbar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:title="REGISTRATION"
         android:titleTextColor="#FFFFFF"
-        android:background="#110F0F"
+        android:background="@drawable/circularborder"
         />
 
     <RelativeLayout

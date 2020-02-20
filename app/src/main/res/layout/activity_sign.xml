@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/bg2"
+    android:background="#000000"
     tools:context=".Sign">
     <Toolbar
         android:layout_width="match_parent"
@@ -77,44 +77,44 @@
 <!--        android:textColor="#FFFFFF"-->
 <!--        android:textColorHint="#FFFFFF"-->
 <!--        />-->
-    <Button
-        android:id="@+id/signin"
-        android:layout_width= "275dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="16dp"
-        android:background="#FFFFFF"
-        android:backgroundTint="@color/white"
-        android:text="   SIGN IN   "
-        android:textStyle="bold"
-        android:textColor="@color/black"
-        android:textSize="14sp"
-        android:layout_gravity="center_horizontal"/>
-    <com.spark.submitbutton.SubmitButton
-        android:id="@+id/layout_signin"
-        android:layout_width="50dp"
-        android:layout_height="550dp"
-        android:text="   SIGN IN   "
-        android:textSize="15sp"
-        android:textColor="@color/black"
-        app:sub_btn_background="@color/white"
-        app:sub_btn_duration="3000"
-        android:textStyle="bold"
-        app:sub_btn_line_color="#8BC34A"
-        app:sub_btn_ripple_color="#03A9F4"
-        app:sub_btn_tick_color="@color/white"
-        android:layout_gravity="center_horizontal"
-        android:visibility="invisible" />
 <!--    <Button-->
-
-<!--       android:layout_gravity="center"-->
 <!--        android:id="@+id/signin"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="Sign in"-->
-<!--/>-->
+<!--        android:layout_width= "275dp"-->
+<!--        android:layout_height="60dp"-->
+<!--        android:layout_marginStart="8dp"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:layout_marginEnd="8dp"-->
+<!--        android:layout_marginBottom="16dp"-->
+<!--        android:background="#FFFFFF"-->
+<!--        android:backgroundTint="@color/white"-->
+<!--        android:text="   SIGN IN   "-->
+<!--        android:textStyle="bold"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="14sp"-->
+<!--        android:layout_gravity="center_horizontal"/>-->
+<!--    <com.spark.submitbutton.SubmitButton-->
+<!--        android:id="@+id/layout_signin"-->
+<!--        android:layout_width="50dp"-->
+<!--        android:layout_height="550dp"-->
+<!--        android:text="   SIGN IN   "-->
+<!--        android:textSize="15sp"-->
+<!--        android:textColor="@color/black"-->
+<!--        app:sub_btn_background="@color/white"-->
+<!--        app:sub_btn_duration="3000"-->
+<!--        android:textStyle="bold"-->
+<!--        app:sub_btn_line_color="#8BC34A"-->
+<!--        app:sub_btn_ripple_color="#03A9F4"-->
+<!--        app:sub_btn_tick_color="@color/white"-->
+<!--        android:layout_gravity="center_horizontal"-->
+<!--        android:visibility="invisible" />-->
+    <Button
+
+       android:layout_gravity="center"
+        android:id="@+id/signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign in"
+/>
     <ProgressBar
         android:layout_gravity="center"
         android:layout_width="wrap_content"

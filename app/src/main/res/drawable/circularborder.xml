@@ -9,7 +9,7 @@
         android:width="100dp"/>
     <corners android:radius="40dp"/>
     <gradient
-        android:startColor="#262626"
+        android:startColor="#212121"
         android:endColor="#262626"
         android:type="linear"
         android:gradientRadius="100%p"

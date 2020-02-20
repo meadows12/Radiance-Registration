@@ -12,7 +12,7 @@
             android:layout_height="match_parent"
             tools:context=".SecondPage"
             android:orientation="vertical"
-            android:background="@drawable/bg2"
+            android:background="#000000"
             android:padding="10dp"
           >
 

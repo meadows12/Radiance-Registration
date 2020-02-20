@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#3C3A3A"
+    android:background="#000000"
     android:orientation="vertical"
     tools:context=".Registration">
 
@@ -12,7 +12,7 @@
         android:id="@+id/stool"
        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#000000"
+        android:background="@drawable/circularborder"
         android:title="REGISTRATION"
         android:titleTextColor="#FFFFFF"
        />

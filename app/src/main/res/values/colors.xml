@@ -2,7 +2,7 @@
 <resources>
     <color name="colorPrimary">#000000</color>
     <color name="colorPrimaryDark">#272731</color>
-    <color name="colorAccent">#FFFFFF</color>
+    <color name="colorAccent">#0d7377</color>
     <color name="black">#000000</color>
     <color name="bordertint">#031D33</color>
     <color name="card">#3A3F5C</color>
