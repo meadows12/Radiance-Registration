@@ -1,5 +1,6 @@
 package com.example.radianceregistration;
 import android.content.Intent;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -12,8 +13,10 @@ import androidx.activity.OnBackPressedCallback;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.CollectionReference;
@@ -24,6 +27,8 @@ import com.shreyaspatil.EasyUpiPayment.model.TransactionDetails;
 
 import java.text.DateFormat;
 import java.util.Calendar;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Random;
 import java.util.UUID;
 import android.os.Bundle;
@@ -88,41 +93,94 @@ public class upi extends AppCompatActivity implements PaymentStatusListener{
         Toast.makeText(this, "Success", Toast.LENGTH_SHORT).show();
         user=mAuth.getCurrentUser();
         Intent i = getIntent();
-        ParticipantInfo info = (ParticipantInfo) i.getSerializableExtra("Object");
+        final ParticipantInfo info = (ParticipantInfo) i.getSerializableExtra("Object");
         int flag = (int)i.getSerializableExtra("FLAG");
         if(flag==0) {
             if (user != null) {
                 String name = user.getEmail().toString();
-                cb.document(name).collection(info.getCollegename().toString()).document().set(info).addOnSuccessListener(
-                        new OnSuccessListener<Void>() {
-                            @Override
-                            public void onSuccess(Void aVoid) {
-                                Toast.makeText(upi.this, "Successfull", Toast.LENGTH_SHORT).show();
-                            }
-                        }
-                ).addOnFailureListener(new OnFailureListener() {
+                cb.document(name).collection(info.getCollegename().toString()).document().set(info).addOnCompleteListener(new OnCompleteListener<Void>() {
                     @Override
-                    public void onFailure(@NonNull Exception e) {
-                        Toast.makeText(upi.this, "Sorry", Toast.LENGTH_SHORT).show();
+                    public void onComplete(@NonNull Task<Void> task) {
+                        if(task.isSuccessful()){
+                            String message = "";
+
+
+                            Resources res = getResources();
+                            Map<String,String> mp = new HashMap<>();
+                            String email1 = info.getEmail().toString();
+                            String name1 = info.getParticipant1().toString();
+                            String college = info.getCollegename().toString();
+                            String subject = "PASCW:- RADIANCE-2020 receipt";
+                            message = "Dear " + name1 +",\n\n Greetings from PASCW!!\n" +
+                                    "\n" +
+                                    "You have successfully registered for RADIANCE-2020\n" +"\n\n\n"+
+                                    "RECEIPT\n"+
+                                    "Name:-"+ name1 +"\n"+
+                                    "College Name:-" + college + "\n" +
+                                    "Events:-"+"\n"+
+                                    "\n" +
+                                    "All the best!!\n" +
+                                    "PICT ACM-W Student Chapter.";
+
+                            //Creating SendMail object
+                            SendEmail sm = new SendEmail(upi.this, email1, subject, message);
+
+                            //Executing sendmail to send email
+                            sm.execute();
+
+
+                            Toast.makeText(upi.this, "User Registered into Database", Toast.LENGTH_SHORT).show();
+                            finish();
+                        }
+                        else{
+                            Toast.makeText(upi.this, "Registration failed.", Toast.LENGTH_SHORT).show();
+                        }
                     }
                 });
+
             }
         }
-        if(flag==1)
-        {
-            cb.document().set(info).addOnSuccessListener(new OnSuccessListener<Void>() {
+        if(flag==1) {
+            cb.document().set(info).addOnCompleteListener(new OnCompleteListener<Void>() {
                 @Override
-                public void onSuccess(Void aVoid) {
-                    Toast.makeText(upi.this, "DONE  right", Toast.LENGTH_SHORT).show();
-                }
-            }).addOnFailureListener(new OnFailureListener() {
-                @Override
-                public void onFailure(@NonNull Exception e) {
-                    Toast.makeText(upi.this, "Done sorry", Toast.LENGTH_SHORT).show();
+                public void onComplete(@NonNull Task<Void> task) {
+                    if (task.isSuccessful()) {
+                        String message = "";
+
+
+                        Resources res = getResources();
+                        Map<String, String> mp = new HashMap<>();
+                        String email1 = info.getEmail().toString();
+                        String name1 = info.getParticipant1().toString();
+                        String college = info.getCollegename().toString();
+                        String subject = "PASCW:- RADIANCE-2020 receipt";
+                        message = "Dear " + name1 + ",\n\n Greetings from PASCW!!\n" +
+                                "\n" +
+                                "You have successfully registered for RADIANCE-2020\n" + "\n\n\n" +
+                                "RECEIPT\n" +
+                                "Name:-" + name1 + "\n" +
+                                "College Name:-" + college + "\n" +
+                                "Events:-" + "\n" +
+                                "\n" +
+                                "All the best!!\n" +
+                                "PICT ACM-W Student Chapter.";
+
+                        //Creating SendMail object
+                        SendEmail sm = new SendEmail(upi.this, email1, subject, message);
+
+                        //Executing sendmail to send email
+                        sm.execute();
+
+
+                        Toast.makeText(upi.this, "User Registered into Database", Toast.LENGTH_SHORT).show();
+                        finish();
+                    } else {
+                        Toast.makeText(upi.this, "Registration failed.", Toast.LENGTH_SHORT).show();
+                    }
                 }
             });
-        }
 //        imageView.setImageResource(R.drawable.ic_success);
+        }
     }
 
     @Override
