@@ -7,16 +7,23 @@
     android:background="#000000"
     android:orientation="vertical"
     tools:context=".Registration">
-
-   <androidx.appcompat.widget.Toolbar
+<!--   < androidx.appcompat.widget.Toolbar-->
+<!--       android:id="@+id/stool"-->
+<!--       android:layout_width="match_parent"-->
+<!--       android:layout_height="wrap_content"-->
+<!--       android:title="REGISTRATION"-->
+<!--       android:titleTextColor="#0d7377"-->
+<!--       android:background="@drawable/circularborder"-->
+<!--       >-->
+<!--</androidx.appcompat.widget.Toolbar>-->
+    <Toolbar
         android:id="@+id/stool"
-       android:layout_width="match_parent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/circularborder"
         android:title="REGISTRATION"
-        android:titleTextColor="#FFFFFF"
-       />
-
+        android:titleTextColor="#0d7377"
+        android:background="@drawable/another"
+        />
 
 
     <RelativeLayout
@@ -226,11 +233,10 @@
                     android:id="@+id/Technical"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:padding="30dp"
-                    android:paddingBottom="30dp"
+                    android:paddingTop="30dp"
                     android:text="TECHNICAL EVENTS"
                     android:textAlignment="center"
-                    android:textColor="#FFFFFF"
+                    android:textColor="#0d7377"
                     android:textSize="20dp"
                     android:textStyle="bold" />
 
@@ -374,11 +380,10 @@
                     android:id="@+id/Nontechnical"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:padding="30dp"
                     android:paddingTop="30dp"
                     android:text="NON-TECHNICAL EVENTS"
                     android:textAlignment="center"
-                    android:textColor="#FFFFFF"
+                    android:textColor="#0d7377"
                     android:textSize="20dp"
                     android:textStyle="bold" />
 
@@ -438,15 +443,12 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_weight="1"
-                    android:text="Total Amount"
-                    android:textColor="#FFFFFF"
+                    android:text="TOTAL AMOUNT"
+                    android:paddingTop="30dp"
+                    android:textColor="#0d7377"
                     android:textSize="20dp"
                     android:textStyle="bold" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="" />
                 <!--                <Button-->
                 <!--                    android:id="@+id/lpay"-->
                 <!--                    android:layout_width= "275dp"-->
@@ -500,15 +502,24 @@
                         android:text="UPI"
                         android:textColor="#FFFFFF" />
                 </RadioGroup>
-
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text=""
+    />
                 <Button
                     android:id="@+id/pay"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:background="@color/colorAccent"
-                    android:text="Pay"
-                    android:textColor="#FFFFFF" />
+                    android:background="@drawable/another"
+                    android:text="PAY"
+                    android:textColor="#0D7377" />
+                <ProgressBar
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/progressBar"/>
             </LinearLayout>
         </ScrollView>
     </RelativeLayout>

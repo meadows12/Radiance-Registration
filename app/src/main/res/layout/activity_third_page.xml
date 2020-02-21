@@ -23,10 +23,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="RECODE IT"
-                    android:textColor="#FFFFFF"
-                    android:textSize="30dp"
+                    android:textColor="#0d7377"
+                    android:textSize="40dp"
                     android:textStyle="bold"
-                    android:padding="20dp"/>
+                    android:paddingTop="20dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -37,11 +37,11 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Rules and Regulations:"
-                    android:textColor="#FFFFFF"
+                    android:text="Rules and Regulations :"
+                    android:textColor="#0d7377"
                     android:textSize="20dp"
                     android:textStyle="bold"
-                    android:padding="20dp"/>
+                    android:paddingTop="20dp"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -54,7 +54,8 @@
                     android:text="Round 1: This is MCQ round which will be conducted on paper. The participants will be allowed to use computer to code the solution if required or they can solve it on paper."
                     android:textColor="#FFFFFF"
                     android:textSize="18sp"
-                    android:padding="20dp"/>
+                    android:paddingTop="20dp"
+                    android:layout_marginHorizontal="5dp"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -62,7 +63,7 @@
                     android:text="Round 2: In second round a set of executable files will be given. The paticipants can run the executable files and give custom input to see the respective output. The participants can run the files any number of times they want. From the given cutom inputs by the participants they need to figure out the logic of the code of the executable file and code it. Use of internet is strictly prohibited and will result in disqualification."
                     android:textColor="#FFFFFF"
                     android:textSize="18sp"
-                    android:padding="20dp"/>
+                    android:layout_marginHorizontal="5dp"/>
 
 
             </LinearLayout>
@@ -75,23 +76,27 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Team Distribution:"
-                    android:textColor="#FFFFFF"
+                    android:text="Team Distribution :"
+                    android:textColor="#0d7377"
                     android:textSize="20dp"
+                    android:layout_marginHorizontal="5dp"
                     android:textStyle="bold"
-                    android:padding="20dp"/>
+                    android:paddingTop="20dp"
+                    android:paddingBottom="10dp"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text=" 1. FE-SE(Junior Team) : Team of 2"
                     android:textColor="#FFFFFF"
+                    android:layout_marginHorizontal="5dp"
                     android:textSize="18sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text=" 2. TE-BE(Senior Team) : Team of 2"
+                    android:layout_marginHorizontal="5dp"
                     android:textColor="#FFFFFF"
                     android:textSize="18sp" />
 
@@ -99,6 +104,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text=" 3. Individual"
+                    android:layout_marginHorizontal="5dp"
                     android:textColor="#FFFFFF"
                     android:textSize="18sp"
                     />
@@ -114,16 +120,18 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Fees:"
+                    android:text="Fees :"
                     android:textStyle="bold"
-                    android:textColor="#FFFFFF"
+                    android:textColor="#0d7377"
                     android:textSize="20dp"
-                    android:padding="20dp"/>
+                    android:paddingTop="20dp"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="#FFFFFF"
+                    android:paddingTop="10dp"
                     android:textSize="18sp"
+                    android:layout_marginHorizontal="5dp"
                     android:text=" 1. Rs 80(Individual)\n 2. Rs 100(Team of 2)"/>
             </LinearLayout>
 

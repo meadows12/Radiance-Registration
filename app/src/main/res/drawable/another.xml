@@ -5,7 +5,7 @@
     <stroke android:color="@color/colorPrimary"
         android:width="2dp"
         />
-    <size android:height="100dp"
+    <size android:height="50dp"
         android:width="100dp"/>
     <corners android:radius="40dp"/>
     <gradient

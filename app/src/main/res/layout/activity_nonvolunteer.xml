@@ -11,8 +11,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:title="REGISTRATION"
-        android:titleTextColor="#FFFFFF"
-        android:background="@drawable/circularborder"
+        android:titleTextColor="#0d7377"
+        android:background="@drawable/another"
         />
 
     <RelativeLayout
@@ -223,12 +223,12 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="TECHNICAL EVENTS"
-                    android:paddingBottom="30dp"
+                    android:paddingTop="30dp"
                     android:textAlignment="center"
                     android:textSize="20dp"
                     android:textStyle="bold"
-                    android:textColor="#FFFFFF"
-                    android:padding="30dp"/>
+                    android:textColor="#0d7377"
+                   />
 
                 <CheckBox
                     android:id="@+id/Codewars"
@@ -259,30 +259,30 @@
                         android:buttonTint="#FFFFFF"/>
 
                 </RadioGroup>
-                <!--                <com.google.android.material.textfield.TextInputLayout-->
-                <!--                    android:id="@+id/layout_name3"-->
-                <!--                    android:layout_width="match_parent"-->
-                <!--                    android:layout_height="wrap_content"-->
-                <!--                    android:layout_marginStart="8dp"-->
-                <!--                    android:layout_marginTop="0dp"-->
-                <!--                    android:textColorHint="#ffffff"-->
-                <!--                    android:visibility="invisible"-->
-                <!--                    app:errorEnabled="true">-->
-                <!--                    <com.google.android.material.textfield.TextInputEditText-->
-                <!--                        android:id="@+id/name3"-->
-                <!--                        android:layout_width="match_parent"-->
-                <!--                        android:layout_height="50dp"-->
-                <!--                        android:layout_marginStart="0dp"-->
-                <!--                        android:layout_marginTop="120dp"-->
-                <!--                        android:layout_marginEnd="8dp"-->
-                <!--                        android:layout_marginBottom="8dp"-->
-                <!--                        android:backgroundTint="#ffffff"-->
-                <!--                        android:ems="10"-->
-                <!--                        android:hint="Participant 2"-->
-                <!--                        android:inputType="textPersonName"-->
-                <!--                        android:visibility="invisible"-->
-                <!--                        android:textColor="#ffffff" />-->
-                <!--                </com.google.android.material.textfield.TextInputLayout>-->
+<!--                                <com.google.android.material.textfield.TextInputLayout-->
+<!--                                    android:id="@+id/layout_name3"-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:layout_marginStart="8dp"-->
+<!--                                    android:layout_marginTop="0dp"-->
+<!--                                    android:textColorHint="#ffffff"-->
+<!--                                    android:visibility="gone"-->
+<!--                                    app:errorEnabled="true">-->
+<!--                                    <com.google.android.material.textfield.TextInputEditText-->
+<!--                                        android:id="@+id/name3"-->
+<!--                                        android:layout_width="match_parent"-->
+<!--                                        android:layout_height="50dp"-->
+<!--                                        android:layout_marginStart="0dp"-->
+<!--                                        android:layout_marginTop="120dp"-->
+<!--                                        android:layout_marginEnd="8dp"-->
+<!--                                        android:layout_marginBottom="8dp"-->
+<!--                                        android:backgroundTint="#ffffff"-->
+<!--                                        android:ems="10"-->
+<!--                                        android:hint="Participant 2"-->
+<!--                                        android:inputType="textPersonName"-->
+<!--                                        android:visibility="gone"-->
+<!--                                        android:textColor="#ffffff" />-->
+<!--                                </com.google.android.material.textfield.TextInputLayout>-->
                 <EditText
                     android:id="@+id/name3"
                     android:layout_gravity="center"
@@ -364,9 +364,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="NON-TECHNICAL EVENTS"
-                    android:padding="30dp"
                     android:textAlignment="center"
-                    android:textColor="#FFFFFF"
+                    android:textColor="#0d7377"
                     android:textSize="20dp"
                     android:textStyle="bold"
                     android:paddingTop="30dp"/>
@@ -421,17 +420,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:textColor="#FFFFFF"
-                    android:text="Total Amount"
+                    android:textColor="#0d7377"
+                    android:text="TOTAL AMOUNT"
+                    android:paddingTop="30dp"
+                    android:paddingBottom="30dp"
                     android:textSize="20dp"
                     android:textStyle="bold"
                     android:id="@+id/result"
                     android:layout_gravity="center"
-                    />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text=""
                     />
                 <!--                <Button-->
                 <!--                    android:id="@+id/lpay"-->
@@ -468,9 +464,9 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:text="Pay"
-                    android:background="#F7F9FA"
+                    android:background="@drawable/another"
                     android:id="@+id/pay"
-                    android:textColor="#000000"
+                    android:textColor="#0D7377"
                     />
                 <ProgressBar
                     android:layout_gravity="center"

@@ -6,21 +6,29 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity"
-    android:background="@drawable/frontr"
+    android:background="@drawable/bg2"
 
     >
-<TextView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="abc"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        android:layout_marginTop="70dp"
+        android:layout_marginHorizontal="70dp"
+        />
 
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Clickboom"
-                    android:textColor="#FFFFFF"
-                    android:onClick="BoomClicked"
-                    />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="From PASCW"
+    android:textColor="#FFFFFF"
+    android:textSize="25dp"
+    android:layout_gravity="center_horizontal"
+    android:fontFamily="casual"
+    android:textStyle="bold"
+    android:paddingBottom="70dp"
+    />
+
 
 
 

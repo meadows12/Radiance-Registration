@@ -28,7 +28,7 @@ public class Boommain extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_boommain);
         bbb = findViewById(R.id.bbb);
-        pascw=findViewById(R.id.pasc);
+//        pascw=findViewById(R.id.pasc);
         bbb.setBoomEnum(BoomEnum.PARABOLA_2);
         bbb.setShowRotateEaseEnum(EaseEnum.EaseOutBack);
         bbb.setUse3DTransformAnimation(true);
@@ -87,7 +87,7 @@ public class Boommain extends AppCompatActivity {
                     break;
                 case 3:
                     builder.normalText("VOLUNTEER SIGN IN")
-                            .normalImageRes(R.drawable.ic_contactus)
+                            .normalImageRes(R.drawable.ic_sign)
                             .imagePadding(new Rect(15,15,15,15))
                             .normalTextColor(R.color.black)
                             .normalColorRes(R.color.colorAccent)
@@ -134,9 +134,9 @@ public class Boommain extends AppCompatActivity {
 
     private void datado() {
 
-        eventList.add(new Event("CODE WARS", R.drawable.codewar));
-        eventList.add(new Event("RECODE IT", R.drawable.recodeit));
-        eventList.add(new Event("QUIZ MASTER", R.drawable.pic3));
-        eventList.add(new Event("SHUTTER UP", R.drawable.up));
+        eventList.add(new Event("CODE WARS", R.drawable.circlecodewar));
+        eventList.add(new Event("RECODE IT", R.drawable.circlerecode));
+        eventList.add(new Event("QUIZ MASTER", R.drawable.quiz_mastericon));
+        eventList.add(new Event("SHUTTER UP", R.drawable.circleshutter));
     }
 }

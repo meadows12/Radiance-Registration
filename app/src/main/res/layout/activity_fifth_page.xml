@@ -23,13 +23,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="SHUTTER UP"
-                    android:textColor="#FFFFFF"
-                    android:textSize="30dp"
-                    android:padding="20dp"
+                    android:textColor="#0d7377"
+                    android:textSize="40dp"
+                    android:paddingTop="20dp"
                     android:textStyle="bold" />
             </LinearLayout>
            <LinearLayout
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -37,17 +37,19 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Photography Contest:"
-                android:padding="20dp"
+                android:text="Photography Contest :"
+                android:layout_marginHorizontal="5dp"
+                android:paddingTop="20dp"
                 android:textStyle="bold"
-                android:textColor="#FFFFFF"
+                android:textColor="#0d7377"
                 android:textSize="20dp" />
 
             <TextView
                 android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="5dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text=" Is there a hidden iconic photographer within you? If yes, then SHUTTER UP provides you an opportunity to showcase your talent. The participants need to submit the picture clicked by them online and their picture will be showcased on our Instagram page."
+                android:text="  Is there a hidden iconic photographer within you? If yes, then SHUTTER UP provides you an opportunity to showcase your talent. The participants need to submit the picture clicked by them online and their picture will be showcased on our Instagram page."
                 android:textColor="#FFFFFF"
                 android:textSize="18sp" />
 
@@ -61,21 +63,24 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Rules and Regulations:"
-                    android:textColor="#FFFFFF"
-                    android:padding="20dp"
+                    android:text="Rules and Regulations :"
+                    android:textColor="#0d7377"
+                    android:paddingTop="20dp"
                     android:textSize="20dp"
+                    android:layout_marginHorizontal="5dp"
                     android:textStyle="bold" />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:layout_marginTop="10dp">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text=" 1.You are required to provide an unique title and description for each image submitted."
                     android:textColor="#FFFFFF"
+                    android:layout_marginHorizontal="5dp"
                     android:textSize="18sp" />
 
                 <TextView
@@ -83,33 +88,38 @@
                     android:layout_height="wrap_content"
                     android:text=" 2. There must be no border, copyright mark."
                     android:textColor="#FFFFFF"
+                    android:layout_marginHorizontal="5dp"
                     android:textSize="18sp" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text=" 3. Photos that portray or otherwise include inappropriate and/or offensive content, including provocative nudity, violence, human rights and/or environmental violation, and/or any other content deemed to be contrary to the law, religious, culture and mortal tradition and practices of India, are strictly prohibited and will be immediately discarded."
                     android:textColor="#FFFFFF"
+                    android:layout_marginHorizontal="5dp"
                     android:textSize="18sp" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
                     android:text=" 4. Maximum 3 entries per person will be permitted."
                     android:textColor="#FFFFFF"
                     android:textSize="18sp" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:padding="20dp"
+                    android:paddingTop="20dp"
                     android:text="Photos will be uploaded on Facebook and Instagram page ACM student chapter. Follow the Facebook and Instagram handle to get notified when your photo is uploaded."
                     android:textColor="#FFFFFF"
+                    android:layout_marginHorizontal="5dp"
                     android:textSize="18sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:padding="20dp"
+                    android:paddingTop="20dp"
                     android:text="Contestant whose photo get most likes on Facebook and on Instagram will be winner."
                     android:textColor="#FFFFFF"
+                    android:layout_marginHorizontal="5dp"
                     android:textSize="18sp" />
 
             </LinearLayout>
@@ -122,10 +132,11 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Team Distribution:"
-                    android:textColor="#FFFFFF"
+                    android:text="Team Distribution :"
+                    android:textColor="#0d7377"
                     android:textSize="20dp"
-                    android:padding="20dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:paddingTop="20dp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -133,6 +144,8 @@
                     android:layout_height="wrap_content"
                     android:text="  FE/SE/TE/BE : Individual"
                     android:textColor="#FFFFFF"
+                    android:layout_marginHorizontal="5dp"
+                    android:paddingTop="10dp"
                     android:textSize="18sp" />
 
 
@@ -146,10 +159,11 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Fees:"
+                    android:text="Fees :"
                     android:textStyle="bold"
-                    android:textColor="#FFFFFF"
-                    android:padding="20dp"
+                    android:textColor="#0d7377"
+                    android:paddingTop="20dp"
+                    android:layout_marginHorizontal="5dp"
                     android:textSize="20dp"
                     />
                 <TextView
@@ -157,6 +171,8 @@
                     android:layout_height="wrap_content"
                     android:textColor="#FFFFFF"
                     android:textSize="18sp"
+                    android:paddingTop="10dp"
+                    android:layout_marginHorizontal="5dp"
                     android:text=" 1. Rs 80 - 1 photo\n 2. Rs 80 - 2 photos\n 3. Rs 100 - 3 photos"/>
             </LinearLayout>
 

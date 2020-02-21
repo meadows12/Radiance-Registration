@@ -43,7 +43,7 @@ public class Registration extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registration);
         FE=(CheckBox)findViewById(R.id.FE);
-        stool =  findViewById(R.id.stool);
+//        stool =  findViewById(R.id.stool);
         mAuth = FirebaseAuth.getInstance();
         SE=(CheckBox)findViewById(R.id.SE);
         TE=(CheckBox)findViewById(R.id.TE);
@@ -385,16 +385,8 @@ public class Registration extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        super.onBackPressed();
+
     }
-    /* public void openDialog()
-    {
-
-        Dialog d = new Dialog();
-        d.show(getSupportFragmentManager(),"payment");
-
-
-    }*/
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

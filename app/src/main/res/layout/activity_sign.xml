@@ -11,8 +11,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:title="VOLUNTEER SIGN IN"
-        android:titleTextColor="#FFFFFF"
-        android:background="#110F0F"
+        android:titleTextColor="#0d7377"
+        android:background="@drawable/another"
         />
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/layout_emailsign"
@@ -114,6 +114,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Sign in"
+        android:textColor="#0d7377"
+        android:background="@drawable/another"
 />
     <ProgressBar
         android:layout_gravity="center"
